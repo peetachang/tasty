@@ -1,0 +1,63 @@
+* {
+    margin-top: 10px;
+}
+
+.menu {
+    background-color: #8fe1ff;
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden;
+}
+
+.logo > img {
+    float:left;
+    width: 150%;
+    height: auto;
+}
+
+/* This is the menubar */
+.menubar {
+    width: 500%;
+}
+
+.menubar > a {
+    display: inline-block;
+    margin-left: 80px;
+    padding-top: 30px;
+    text-decoration: none;
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    position: relative;
+}
+
+/* This is menu hover */
+.menu a:hover {
+    color:black;
+}
+
+.menu a:before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: black;
+   
+    position:absolute;
+    top: 20px;
+    width: 0%;
+
+    transition: all ease-in-out 300ms;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+
+/* searchbar */
+.searchbar {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+}
